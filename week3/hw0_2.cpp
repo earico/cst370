@@ -1,3 +1,11 @@
+/*
+ * Title: hw0_2.cpp
+ * Abstract: This program reads an input of 5 numbers
+ * and outputs the min, max and median amongst the 5 given
+ * numbers in the array.
+ * Author: Eleazar Rico
+ * Date: 2-05-2024
+*/
 #include <iostream>
 using namespace std;
 

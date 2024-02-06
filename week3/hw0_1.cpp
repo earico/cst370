@@ -1,3 +1,10 @@
+/*
+ * Title: hw_01.cpp
+ * Abstract: This program reads the input between two 
+ * integers and outputs the sum and difference between them
+ * Author: Eleazar Rico
+ * Date: 2-05-2024
+*/
 #include <iostream>
 using namespace std;
 
