@@ -21,13 +21,23 @@ void calc(int arr[5]) {
 		if (arr[i] < min) {
 			min = arr[i];
 		}
-		median += arr[i];
+		median = median + arr[i];
 	}
-	median = median/5;
+	
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 4; j++) {
+			if (arr[j] > arr[j+1]){
+				median = arr[j];
+				arr[j] = arr[j+1];
+				arr[j+1] = median;
+			}
+		}
+	}
+	median = arr[2];
 
-	cout << "MIN: " << min 
-	     << "\nMAX: " << max
-	     << "\nMEDIAN: " << median << endl;
+	cout << "MIN:" << min 
+	     << "\nMAX:" << max
+	     << "\nMEDIAN:" << median << endl;
 }
 
 int main() {
